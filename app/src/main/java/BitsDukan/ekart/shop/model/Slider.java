@@ -1,8 +1,10 @@
 package BitsDukan.ekart.shop.model;
 
 
+import BitsDukan.ekart.shop.helper.Constant;
+
 public class Slider {
-    final String image;
+    String image;
     String type;
     String type_id;
     String name;
@@ -26,8 +28,9 @@ public class Slider {
         return name;
     }
 
-    public String getImage() {
-        return image;
+    public String getImage()
+    {
+        return image.replace("http://bitsgalaxy.co/", Constant.MAINBASEUrl);
     }
 
     public String getType() {

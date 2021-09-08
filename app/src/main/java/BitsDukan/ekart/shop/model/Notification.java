@@ -1,5 +1,7 @@
 package BitsDukan.ekart.shop.model;
 
+import BitsDukan.ekart.shop.helper.Constant;
+
 public class Notification {
 
     String id, name, subtitle, type, type_id, image;
@@ -45,7 +47,7 @@ public class Notification {
     }
 
     public String getImage() {
-        return image;
+        return image.replace("http://bitsgalaxy.co/", Constant.MAINBASEUrl);
     }
 
     public void setImage(String image) {

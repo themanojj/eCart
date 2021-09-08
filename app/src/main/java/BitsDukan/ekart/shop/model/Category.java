@@ -2,6 +2,8 @@ package BitsDukan.ekart.shop.model;
 
 import java.util.ArrayList;
 
+import BitsDukan.ekart.shop.helper.Constant;
+
 public class Category {
     String id, name, subtitle, image, slug, category_id, payType, status, date, amountReq, month, year, email;
     String style;
@@ -40,7 +42,7 @@ public class Category {
     }
 
     public String getImage() {
-        return image;
+        return image.replace("http://bitsgalaxy.co/", Constant.MAINBASEUrl);
     }
 
     public void setImage(String image) {
